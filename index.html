@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css\normalize.css">
+    <link rel="stylesheet" href="css\style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+    <title>Tabs</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="tabs">
+            <span class="tab"><img src="img\tooltip.svg">INFORMATION</span>
+            <span class="tab"><img src="img\card.svg">RATINGS INFO</span>
+            <span class="tab"><img src="img\basket.svg">WHERE TO BUY</span>
+        </div>
+        <div class="tab_content">
+            <div class="tab_item">
+                <div class="tab_item__img">
+                    <img src="img\FarCry.png" alt="FarCry">
+                </div>
+                <div class="tab_item__content">
+                    <div class="tab_item__content_position">
+                        <div class="tab_item_content__title">
+                            <h1>FarCry 4</h1>
+                            <p class="tab_item_subtitle">First Released Nov 17, 2014</p>
+                        </div>
+                        <div class="score">
+                            <p>7.8</p>
+                        </div>
+                    </div>
+                    <p class="text">In Far Cry 4, players find themselves in Kyrat, a breathtaking, perilous and wind
+                        region of the
+                        Hima<br>layas struggling under the regime of a despotic<br> self-appointed king.</p>
+                    <div class="tab-item__box">
+                        <div class="tab_item__box-text">
+                            <p>20% OFF!</p>
+                            <h3>$59.96</h3>
+                        </div>
+                        <div>
+                            <button class="tab_item__box-button" type="button">BUY IT NOW</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab_item">
+                <div class="tab_item__img">
+                    <img src="img\farcry3.png" alt="FarCry">
+                </div>
+                <div class="tab_item__content">
+                    <div class="tab_item__content_position">
+                        <div class="tab_item_content__title">
+                            <h1>FarCry 4</h1>
+                            <p class="tab_item_subtitle">First Released Nov 17, 2014</p>
+                        </div>
+                        <div class="score">
+                            <p>8.8</p>
+                        </div>
+                    </div>
+                    <p class="text">In Far Cry 4, players find themselves in Kyrat, a breathtaking, perilous and wind
+                        region of the
+                        Hima<br>layas struggling under the regime of a despotic<br> self-appointed king.</p>
+                    <div class="tab-item__box">
+                        <div class="tab_item__box-text">
+                            <p>30% OFF!</p>
+                            <h3>$89.96</h3>
+                        </div>
+                        <div>
+                            <button class="tab_item__box-button" type="button">BUY IT NOW</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab_item">
+                <div class="tab_item__img">
+                    <img src="img\farcry5.png" alt="FarCry">
+                </div>
+                <div class="tab_item__content">
+                    <div class="tab_item__content_position">
+                        <div class="tab_item_content__title">
+                            <h1>FarCry 4</h1>
+                            <p class="tab_item_subtitle">First Released Nov 17, 2014</p>
+                        </div>
+                        <div class="score">
+                            <p>9.1</p>
+                        </div>
+                    </div>
+                    <p class="text">In Far Cry 4, players find themselves in Kyrat, a breathtaking, perilous and wind
+                        region of the
+                        Hima<br>layas struggling under the regime of a despotic<br> self-appointed king.</p>
+                    <div class="tab-item__box">
+                        <div class="tab_item__box-text">
+                            <p>10% OFF!</p>
+                            <h3>$69.96</h3>
+                        </div>
+                        <div>
+                            <button class="tab_item__box-button" type="button">BUY IT NOW</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+        $(".tab_item").not(":first").hide();
+        $(".wrapper .tab").click(function () {
+            $(".wrapper .tab").removeClass("active").eq($(this).index()).addClass("active");
+            $(".tab_item").hide().eq($(this).index()).fadeIn();
+        }).eq(0).addClass("active");
+        // $(".tab_item__box-button").hover(function () {
+        //     $(this).css("background-color", "#212534").css("color", "#13e28d")
+        // }, function () {
+        //     $(this).
+        // })
+
+        $(".tabs").on("click", ".tab", function () {
+            $(".tab").removeClass("active");
+            $(this).addClass("active");
+        })
+
+    </script>
+</body>
+
+</html>

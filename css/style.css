@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato";
+}
+body{
+    background-image: url("../img/Layer 41.png"), url("../img/Layer 1.png");
+    background-blend-mode: normal;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.wrapper{
+    background-color: #212534;
+    max-width: 600px;
+    width: 100%;
+    height: 535px;
+    margin: 15% auto;
+    text-align: center;
+    color: white;
+}
+.tabs{
+    background-color: #2b3040;
+    height: 115px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.tab{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    line-height: 14px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+.tab img{
+    width: 25px;
+    height: 25px;
+    margin-bottom: 10px;
+}
+.tab_item, .tab_item__content_position, .tab-item__box{
+    display: flex;
+    justify-content: space-between;
+}
+.tab_item__img{
+    margin-top: 60px;
+    margin-left: 5%;
+}
+.tab_item__content{
+    margin-left: 5%;
+    margin-right: 7%;
+}
+.tab_item_content__title h1{
+    font-size: 28px;
+    text-align: left;
+    margin-top: 70px;
+    margin-bottom: 5px;
+}
+.tab_item_subtitle{
+    font-size: 14px;
+    opacity: 0.9;
+}
+.text{
+    margin-top: 30px;
+    text-align: left;
+    font-size: 14px;
+    line-height: 22px;
+    opacity: 0.6;
+}
+.tab-item__box{
+    margin-top: 65px;
+    cursor: pointer;
+}
+.tab_item__box-text p{
+    color: #ffdd3f;
+    font-size: 16px;
+    text-align: left;
+}
+.tab_item__box-text h3{
+    font-size: 32px;
+    font-weight: 400;
+}
+.tab_item__box-button{
+    width: 165px;
+    height: 55px;
+    background-color: #13e28d;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 700;
+}
+.score{
+    border-radius: 50%;
+    border: 1px solid #787c9b;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 55px;
+    cursor: pointer;
+}
+.active{
+    border-bottom: 2px solid white;
+    color: white;
+    opacity: 1;
+}
+.tab_item__box-button:hover{
+    background-color: #212534;
+    color: #13e28d;
+    transition: 0.7s ease-in-out;
+}
+.tab_item__img img{
+    width: 160px;
+    height: 230px;
+}
